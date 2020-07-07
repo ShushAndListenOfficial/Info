@@ -1,0 +1,34 @@
+{
+    "window.zoomLevel": 0,　//0.8 or 2 etc...
+    "editor.fontFamily": "'Source Code Pro'",
+    "editor.rulers": [80,120],
+    // 一般來說我們常用8080
+"liveServer.settings.port": 8080,
+// 不用每次開起LiveServer就跳出通知
+"liveServer.settings.donotShowInfoMsg": true,
+// 自訂編譯後產出的css檔案放置路徑
+"liveSassCompile.settings.formats": [
+    {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/assets/style"
+    },
+    {
+        "extensionName": ".min.css",
+        "format": "compressed",
+        "savePath": "/assets/style"
+    }
+],
+// 以下資料夾內的檔案不要編譯
+"liveSassCompile.settings.excludeList": [
+    "**/node_modules/**",
+    ".vscode/**"
+],
+// 不要產出 map 檔
+"liveSassCompile.settings.generateMap": false,
+// 協助編譯兼容99%瀏覽器，且向下相容兩個版本
+"liveSassCompile.settings.autoprefix": [
+    "> 1%",
+    "last 2 versions"
+]
+}
